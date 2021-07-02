@@ -1,0 +1,15 @@
+D:\Documents\UPC\2021_1\Web\Proyecto_Aula\Datos\bin\Debug\net5.0\Datos.deps.json
+D:\Documents\UPC\2021_1\Web\Proyecto_Aula\Datos\bin\Debug\net5.0\Datos.dll
+D:\Documents\UPC\2021_1\Web\Proyecto_Aula\Datos\bin\Debug\net5.0\ref\Datos.dll
+D:\Documents\UPC\2021_1\Web\Proyecto_Aula\Datos\bin\Debug\net5.0\Datos.pdb
+D:\Documents\UPC\2021_1\Web\Proyecto_Aula\Datos\bin\Debug\net5.0\Entity.dll
+D:\Documents\UPC\2021_1\Web\Proyecto_Aula\Datos\bin\Debug\net5.0\Entity.pdb
+D:\Documents\UPC\2021_1\Web\Proyecto_Aula\Datos\obj\Debug\net5.0\Datos.csprojAssemblyReference.cache
+D:\Documents\UPC\2021_1\Web\Proyecto_Aula\Datos\obj\Debug\net5.0\Datos.GeneratedMSBuildEditorConfig.editorconfig
+D:\Documents\UPC\2021_1\Web\Proyecto_Aula\Datos\obj\Debug\net5.0\Datos.AssemblyInfoInputs.cache
+D:\Documents\UPC\2021_1\Web\Proyecto_Aula\Datos\obj\Debug\net5.0\Datos.AssemblyInfo.cs
+D:\Documents\UPC\2021_1\Web\Proyecto_Aula\Datos\obj\Debug\net5.0\Datos.csproj.CoreCompileInputs.cache
+D:\Documents\UPC\2021_1\Web\Proyecto_Aula\Datos\obj\Debug\net5.0\Datos.csproj.CopyComplete
+D:\Documents\UPC\2021_1\Web\Proyecto_Aula\Datos\obj\Debug\net5.0\Datos.dll
+D:\Documents\UPC\2021_1\Web\Proyecto_Aula\Datos\obj\Debug\net5.0\ref\Datos.dll
+D:\Documents\UPC\2021_1\Web\Proyecto_Aula\Datos\obj\Debug\net5.0\Datos.pdb

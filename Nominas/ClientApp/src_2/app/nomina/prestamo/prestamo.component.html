@@ -1,0 +1,73 @@
+<div class="container">
+    <div class="row">
+        <div class="col-md-6 offset-md-3">
+            <h2>Registrar Prèstamo a Empleado</h2>
+            <!--  <form>
+                <div class="form-group">-->
+            <form>
+                <div class="form-group">
+                    <label>Identificacion</label>
+                    <input type="number" name="identificacion" [(ngModel)]="persona.identificacion"
+                        class="form-control" />
+                </div>
+                <div class="text-center">
+                    <button class="btn btn-primary mr-1" (click)="add()">Buscar</button>
+                </div>
+                <div class="form-group">
+                    <label>Nombres</label>
+                    <input type="text" name="nombre" [(ngModel)]="persona.nombre" class="form-control" disabled />
+                </div>
+
+                <div class="form-group">
+                    <label>Apellidos</label>
+                    <input type="text" name="apellidos" [(ngModel)]="persona.apellidos" class="form-control" disabled />
+                </div>
+            </form>
+
+            <form class="row g-3">
+                <div class="col-md-6">
+                    <label>Fecha de Prestamo</label>
+                    <input type="date" name="fechaprestamo" [(ngModel)]="persona.fechaprestamo" class="form-control" />
+                </div>
+
+                <div class="col-md-6">
+                    <label>Valor Prestamo</label>
+                    <input type="number" name="prestamo" [(ngModel)]="persona.prestamo" class="form-control" />
+                </div>
+            </form>
+
+            <form>
+                <div class="text-center">
+                    <button class="btn btn-primary mr-1" (click)="add()">Registrar</button>
+                    <button class="btn btn-secondary" type="reset">Cancelar</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+<hr>
+<table class="table table-striped table-primary">
+    <thead>
+        <tr>
+            <th scope="col">#</th>
+            <th scope="col">Identificación</th>
+            <th scope="col">Nombres </th>
+            <th scope="col">Apellidos </th>
+            <th scope="col">Fecha de Prestamo</th>
+            <th scope="col">Valor Prestamo</th>
+            <th scope="col">Estado del Prestamo</th>
+        </tr>
+    </thead>
+    <tbody>
+        <!--Cambiar la cadena-->  
+         <tr *ngFor="let persona of personas; index as i ">
+            <th scope="row">{{ i + 1 }}</th>
+            <td>{{ persona.identificacion }} </td>
+            <td>{{ persona.nombre }}</td>
+            <td>{{ persona.apellidos }}</td>
+            <td>{{ persona.fechaprestamo }}</td>
+            <td>{{ persona.vrPrestamo }}</td>
+            <td>{{ persona.estadoPrestamo }}</td>
+        </tr>
+    </tbody>
+</table>

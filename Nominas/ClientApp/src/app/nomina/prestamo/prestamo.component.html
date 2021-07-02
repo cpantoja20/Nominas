@@ -1,0 +1,76 @@
+<div class="container">
+    <div class="row">
+        <div class="col-md-6 offset-md-3">
+            <h2>Registrar Prèstamo a Empleado</h2>
+            <!--  <form>
+                <div class="form-group">-->
+            <form *ngIf="ver">
+                <div class="form-group">
+                    <label>Identificacion</label>
+                    <input type="number" name="identificacion" [(ngModel)]="buscar" class="form-control" />
+                </div>
+                <div class="text-center">
+                    <button class="btn btn-primary mr-1" (click)="add()">Buscar</button>
+                </div>
+
+            </form>
+            <form action="" *ngIf="ver2">
+                <div class="form-group" >
+                    <label>Nombres</label>
+                    <input type="text" name="nombre" [(ngModel)]="persona.nombres" class="form-control" disabled />
+                </div>
+
+                <div class="form-group">
+                    <label>Apellidos</label>
+                    <input type="text" name="apellidos" [(ngModel)]="persona.apellidos" class="form-control" disabled />
+                </div>
+            </form>
+        </div>
+        <div class="col-md-6 offset-md-3" *ngIf="ver2">
+            <form class="row g-3">
+                <div class="col-md-6">
+                    <label>Fecha de Prestamo</label>
+                    <input type="date" name="fechaprestamo" [(ngModel)]="prestamos.fechadePrestamo"
+                        class="form-control" />
+                </div>
+
+                <div class="col-md-6">
+                    <label>Valor Prestamo</label>
+                    <input type="number" name="prestamo" [(ngModel)]="prestamos.valorPrestamo" class="form-control" />
+                </div>
+            </form>
+            <br><br>
+            <form>
+                <div class="text-center">
+                    <button class="btn btn-primary mr-1" (click)="realizarPrestamo()">Registrar</button>
+                    <button class="btn btn-secondary" type="reset">Cancelar</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+<hr>
+<table class="table table-striped table-primary" *ngIf="ver2">
+    <thead>
+        <tr>
+            <th scope="col">#</th>
+            <th scope="col">Identificación</th>
+            <th scope="col">Nombres </th>
+            <th scope="col">Apellidos </th>
+            <th scope="col">Fecha de Prestamo</th>
+            <th scope="col">Valor Prestamo</th>
+            <th scope="col">Estado del Prestamo</th>
+        </tr>
+    </thead>
+    <tbody>
+         <tr *ngFor="let persona of personas; index as i ">
+            <th scope="row">{{ i + 1 }}</th>
+            <td>{{ persona.identificacion }} </td>
+            <td>{{ persona.nombres }}</td>
+            <td>{{ persona.apellidos }}</td>
+            <td>{{ persona.fechaingreso }}</td>
+            <td>$ {{ persona.vrNeto }}</td>
+            <td>{{ persona.Firma }}</td>
+        </tr>
+    </tbody>
+</table>

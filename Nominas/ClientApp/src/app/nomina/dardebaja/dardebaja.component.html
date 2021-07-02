@@ -1,0 +1,40 @@
+<div class="container">
+    <div class="row">
+        <div class="col-md-6 offset-md-3">
+            <h2>Dar de Baja a Empleado</h2>
+            <br />
+            <!--  <form>
+                <div class="form-group">-->
+            <form class="row g-3" *ngIf="ver">
+                <div class="col-12">
+                    <label class="form-label">Identificacion</label>
+                    <input type="number" name="identificacion" [(ngModel)]="buscar" class="form-control" />
+                </div>
+                <br><br>
+                <div class="col-12">
+                    <button class="btn btn-secondary mr-1 " (click)="buscarPersona()">Buscar</button>
+                </div>
+            </form>
+            <br />
+            <form class="row g-3" *ngIf="ver2">
+                <div class="col-md-6">
+                    <label class="form-label">Nombres</label>
+                    <input type="text" name="nombre" [(ngModel)]="personas.nombres" class="form-control" disabled />
+                </div>
+
+                <div class="col-md-6">
+                    <label class="form-label">Apellidos</label>
+                    <input type="text" name="apellidos" [(ngModel)]="personas.apellidos" class="form-control"
+                        disabled />
+                </div>
+            </form>
+            <br />
+
+            <div class="text-center" *ngIf="ver2">
+                <button class="btn btn-primary mr-1" (click)="echar(personas)">Dar de Baja</button>
+                <button class="btn btn-secondary" type="reset">Cancelar</button>
+            </div>
+
+        </div>
+    </div>
+</div>

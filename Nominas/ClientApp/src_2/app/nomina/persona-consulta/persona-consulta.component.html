@@ -1,0 +1,38 @@
+<div class="container">
+    <div class="row">
+        <div class="col-6">
+            <input [(ngModel)]="searchText" type="text" class="formcontrol" placeholder="Type to filter">
+        </div>
+    </div>
+    <hr>
+    <table class="table table-striped table-primary">
+        <thead>
+            <tr>
+                <th scope="col">#</th>
+                <th scope="col">Identificación</th>
+                <th scope="col">Nombres </th>
+                <th scope="col">Apellidos </th>
+                <th scope="col">Sexo</th>
+                <th scope="col">Fecha de Nacimiento</th>
+                <th scope="col">Edad</th>
+                <th scope="col">Fecha de Ingreso</th>
+                <th scope="col">Tipo Contrato</th>
+                <th scope="col">Estado</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let persona of personas|pipefiltroPersona:searchText; index as i ">
+                <th scope="row">{{ i + 1 }}</th>
+                <td>{{ persona.identificacion }} </td>
+                <td>{{ persona.nombres }}</td>
+                <td>{{ persona.apellidos }}</td>
+                <td>{{persona.sexo }}</td>
+                <td>{{ persona.fechadenacimiento }}</td>
+                <td>{{ persona.edad }}</td>
+                <td>{{ persona.fechaIngreso }}</td>
+                <td>{{ persona.tipoContrato }}</td>
+                <td>{{ persona.estado }}</td>
+            </tr>
+        </tbody>
+    </table>    
+</div>

@@ -1,0 +1,12 @@
+D:\Documents\UPC\2021_1\Web\Proyecto_Aula\Entity\bin\Debug\net5.0\Entity.deps.json
+D:\Documents\UPC\2021_1\Web\Proyecto_Aula\Entity\bin\Debug\net5.0\Entity.dll
+D:\Documents\UPC\2021_1\Web\Proyecto_Aula\Entity\bin\Debug\net5.0\ref\Entity.dll
+D:\Documents\UPC\2021_1\Web\Proyecto_Aula\Entity\bin\Debug\net5.0\Entity.pdb
+D:\Documents\UPC\2021_1\Web\Proyecto_Aula\Entity\obj\Debug\net5.0\Entity.csprojAssemblyReference.cache
+D:\Documents\UPC\2021_1\Web\Proyecto_Aula\Entity\obj\Debug\net5.0\Entity.GeneratedMSBuildEditorConfig.editorconfig
+D:\Documents\UPC\2021_1\Web\Proyecto_Aula\Entity\obj\Debug\net5.0\Entity.AssemblyInfoInputs.cache
+D:\Documents\UPC\2021_1\Web\Proyecto_Aula\Entity\obj\Debug\net5.0\Entity.AssemblyInfo.cs
+D:\Documents\UPC\2021_1\Web\Proyecto_Aula\Entity\obj\Debug\net5.0\Entity.csproj.CoreCompileInputs.cache
+D:\Documents\UPC\2021_1\Web\Proyecto_Aula\Entity\obj\Debug\net5.0\Entity.dll
+D:\Documents\UPC\2021_1\Web\Proyecto_Aula\Entity\obj\Debug\net5.0\ref\Entity.dll
+D:\Documents\UPC\2021_1\Web\Proyecto_Aula\Entity\obj\Debug\net5.0\Entity.pdb

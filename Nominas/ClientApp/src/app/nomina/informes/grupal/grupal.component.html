@@ -1,0 +1,71 @@
+<div class="container">
+    <div class="row">
+        <div class="col-md-6 offset-md-3">
+            <h2>Informe grupal de Empleado</h2>
+            <!--  <form>
+                <div class="form-group">-->
+            <form>
+                <div class="form-group">
+                    <label>Tipo de Contrato</label>
+                    <select class="form-select" aria-label="Default select example" name="tipocontrato"
+                    [(ngModel)]="searchText" class="form-control" >
+                    <option value="Aprendizaje">Aprendizaje</option>
+                    <option value="ObraLabor">Obra o labor</option>
+                    <option value="Ocasional">Ocasional</option>
+                    <option value="PrestacionServicios">Prestación de servicios</option>
+                    <option value="Fijo">Término Fijo</option>
+                    <option value="Indefinido">Término indefinido</option>
+                    <option value="Todos">Todos</option>
+                </select>
+                </div>
+                <!--<form class="row g-3">
+                    <div class="col-md-6">
+                        <label class="form-label">Fecha de Inicial</label>
+                        <input type="date" name="fechainicio" [(ngModel)]="fechainicio" class="form-control" />
+                    </div>
+                    <div class="col-md-6">
+                        <label class="form-label">Fecha de Final</label>
+                        <input type="date" name="fechafinal" [(ngModel)]="fechafinal" class="form-control" />
+                    </div>
+                </form>-->
+
+                <div class="text-center col-12">
+                    <br/>
+                    <button class="btn btn-primary mr-1" (click)="buscar()">Generar</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <div class="row">
+    </div>
+    <hr>
+    <table class="table table-striped table-primary">
+        <thead>
+            <tr>
+                <th scope="col">Identificación</th>
+                <th scope="col">Nombres </th>
+                <th scope="col">Apellidos </th>
+                <th scope="col">Dias Laborados</th>
+                <th scope="col">Vr Dia</th>
+                <th scope="col">Valor Pagado</th>
+                <th scope="col">Total dias pagados</th>
+                <th scope="col">Firma</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let persona of personas">
+               <td *ngIf="(persona != null)">{{ persona.identificacion }} </td>
+                <td *ngIf="(persona != null)">{{ persona.nombres }}</td>
+                <td *ngIf="(persona != null)">{{ persona.apellidos }}</td>
+                <td *ngIf="(persona != null)">{{persona.diaslab }}</td>
+                <td *ngIf="(persona != null)">$ {{ persona.vrDia }}</td>
+                <td *ngIf="(persona != null)">$ {{ persona.vrNeto }}</td>
+                <td *ngIf="(persona != null)">$ {{ persona.pago }}</td>
+                <td *ngIf="(persona != null)">{{ persona.Firma }}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>

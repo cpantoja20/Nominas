@@ -1,0 +1,82 @@
+<div class="container">
+    <div class="row">
+        <div class="col-md-6 offset-md-3">
+            <h2>Editar Empleado</h2>
+            <br/>
+            <!--  <form>
+                <div class="form-group">-->
+            <form class="row g-3">
+                <div class="col-12">
+                    <label class="form-label">Buscar Personal</label>
+                    <input type="number" name="identificacion" [(ngModel)]="buscar"
+                                class="form-control" />
+                </div>
+            </form>
+            <form class="row g-3">
+                <div class="col-12">
+                    <label class="form-label">Identificacion</label>
+                    <input type="number" name="identificacion" [(ngModel)]="persona.identificacion"
+                        class="form-control" disabled />
+                </div>
+
+                <div class="col-12">
+                    <label class="form-label">Nombres</label>
+                    <input type="text" name="nombre" [(ngModel)]="persona.nombres" class="form-control" disabled />
+                </div>
+
+                <div class="col-12">
+                    <label class="form-label">Apellidos</label>
+                    <input type="text" name="apellidos" [(ngModel)]="persona.apellidos" class="form-control" disabled />
+                </div>
+            </form>
+            <form class="row g-3">
+                <div class="col-md-6">
+                    <label class="form-label">Fecha de Ingreso</label>
+                    <input type="date" name="fechaingreso" [(ngModel)]="fechaIngreso" class="form-control" />
+                    <br>
+                    <input type="text" name="fechaingreso" [(ngModel)]="persona.fechaIngreso" class="form-control" />
+                </div>
+            </form>
+            <form class="row g-3">
+                <div class="col-md-6">
+                    <label>Tipo de Contrato</label>
+                    <select class="form-select" aria-label="Default select example" name="tipocontrato"
+                        [(ngModel)]="persona.tipocontrato" class="form-control">
+                        <option value="aprendizaje">Aprendizaje</option>
+                        <option value="obraLabor">Obra o labor</option>
+                        <option value="ocasional">Ocasional</option>
+                        <option value="prestacionServicios">Prestación de servicios</option>
+                        <option value="fijo">Término Fijo</option>
+                        <option value="indefinido">Término indefinido</option>
+                    </select>
+                </div>
+
+                <div class="col-md-6">
+                    
+                    <label class="form-label">Estado</label> <br/>
+
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="activo">
+                        <label class="form-check-label" for="activo">
+                            Activo
+                        </label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="inactivo">
+                        <label class="form-check-label" for="inactivo">
+                            Inactivo
+                        </label>
+                    </div>
+                </div>
+                
+               
+                <div class="col-12 text-center">
+                    <br/>
+                    <button class="btn btn-secondary mr-1 " (click)="encontrar()">Buscar</button>
+                    <button class="btn btn-primary mr-1" (click)="Actualizar()">Actualizar</button>
+                    <button class="btn btn-secondary" type="reset">Cancelar</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

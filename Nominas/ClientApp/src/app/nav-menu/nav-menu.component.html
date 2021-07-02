@@ -1,0 +1,58 @@
+<header>
+  <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-info border-bottom box-shadow mb-3 ">
+    <div class="container">
+      <a class="navbar-brand " [routerLink]="['/']">Nominas</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse"
+        aria-label="Toggle navigation" [attr.aria-expanded]="isExpanded" (click)="toggle()">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="navbar-collapse collapse d-sm-inline-flex justify-content-end" [ngClass]="{ show: isExpanded }">
+        <ul class="nav justify-content-center">
+          <li class="nav-item" [routerLinkActive]="['link-active']" [routerLinkActiveOptions]="{ exact: true }">
+            <a class="nav-link text-dark" [routerLink]="['/']">Home</a>
+          </li>
+          
+          <li class="nav-item" [routerLinkActive]="['link-active']" >
+            <a class="nav-link text-dark" [routerLink]="['/personaRegistro']">Registro</a>
+          </li>
+          <li class="nav-item" [routerLinkActive]="['link-active']">
+            <a class="nav-link text-dark" [routerLink]="['/personaConsulta']">Consulta</a>
+          </li>
+          <li class="nav-item" [routerLinkActive]="['link-active']">
+            <a class="nav-link text-dark" [routerLink]="['/editar']">Editar</a>
+          </li>
+          <li class="nav-item" [routerLinkActive]="['link-active']">
+            <a class="nav-link text-dark" [routerLink]="['/prestamo']">Prestamos</a>
+          </li>
+          <li class="nav-item" [routerLinkActive]="['link-active']">
+            <a class="nav-link text-dark" [routerLink]="['/pago']">Pagos</a>
+          </li>
+          <li class="nav-item" [routerLinkActive]="['link-active']">
+            <a class="nav-link text-dark" [routerLink]="['/dardebaja']">Dar de Baja</a>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+              data-toggle="dropdown" >
+              Informes
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <a class="dropdown-item" [routerLink]="['/grupal']">Informe Grupal</a>
+              <a class="dropdown-item" [routerLink]="['/individual']">Informe Individual</a>
+            </div>
+          </li>
+
+          <li class="nav-item" [routerLinkActive]="['link-active']" *ngIf="currentUser">
+            <a class="nav-item nav-link" (click)="logout()">Logout</a>
+          </li>
+          <li class="nav-item" [routerLinkActive]="['link-active']" *ngIf="!currentUser">
+            <a class="nav-item nav-link" [routerLink]="['/login']">Login</a>
+          </li>
+
+        </ul>
+      </div>
+    </div>
+  </nav>
+</header>
+
+

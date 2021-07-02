@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "Ki6D4tcH0PBzVcP1Js/4N3iAgZXhcYFqf3PfPuI7MOst/MRPIMEhcgHYAhalKrwprjAQ74HCVG80Smdk4j0oBg==",
+  "success": true,
+  "projectFilePath": "D:\\Documents\\UPC\\2021_1\\Web\\Proyecto_Aula\\Version_2\\Nominas\\Entity\\Entity.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\sindy\\.nuget\\packages\\system.componentmodel.annotations\\4.7.0\\system.componentmodel.annotations.4.7.0.nupkg.sha512"
+  ],
+  "logs": []
+}

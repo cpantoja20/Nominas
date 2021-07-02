@@ -1,0 +1,4 @@
+D:\Documents\UPC\2021_1\Web\Proyecto_Aula\Version_2\Nominas\publish\Entity.dll
+D:\Documents\UPC\2021_1\Web\Proyecto_Aula\Version_2\Nominas\publish\Entity.deps.json
+D:\Documents\UPC\2021_1\Web\Proyecto_Aula\Version_2\Nominas\publish\Entity.pdb
+D:\Documents\UPC\2021_1\Web\Proyecto_Aula\Version_2\Nominas\publish\System.ComponentModel.Annotations.dll

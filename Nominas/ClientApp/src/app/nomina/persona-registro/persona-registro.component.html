@@ -1,0 +1,70 @@
+<div class="container">
+    <div class="row">
+        <div class="col-md-6 offset-md-3">
+            <h2>Registro de Empleados</h2>
+
+            <form [formGroup]="formGroup">
+                <div>
+
+                    <label>Identificacion</label>
+                    <input type="number" name="identificacion" formControlName="identificacion" class="form-control" />
+                </div>
+                <div>
+                    <label>Nombres</label>
+                    <input type="text" name="nombre" formControlName="nombres" class="form-control" />
+                </div>
+
+                <div>
+                    <label>Apellidos</label>
+                    <input type="text" name="apellidos" formControlName="apellidos" class="form-control" />
+                </div>
+
+                <div>
+                    <label>Sexo</label>
+                    <select class="form-select" aria-label="Default select example" name="sexo" formControlName="sexo"
+                        class="form-control">
+                        <option value="Femenino">Femenino</option>
+                        <option value="Masculino">Masculino</option>
+                    </select>
+                </div>
+
+                <div class="row g-3 ">
+                    <div class="col-md-6">
+                        <label>Fecha de Nacimiento</label>
+                        <input type="date" name="fechadenacimiento" formControlName="fechadenacimiento"
+                            class="form-control" />
+                    </div>
+                    <div class="col-md-6">
+                        <label>Edad</label>
+                        <input type="number" name="edad" class="form-control" disabled />
+                    </div>
+                    <div class="col-md-6">
+                        <label>Fecha de Ingreso</label>
+                        <input type="date" name="fechaingreso" formControlName="fechaingreso" class="form-control" />
+                    </div>
+                    <div class="col-md-6">
+                        <label>Tipo de Contrato</label>
+                        <select class="form-select" aria-label="Default select example" name="tipocontrato"
+                            formControlName="tipoContrato" class="form-control">
+                            <option value="Aprendizaje">Aprendizaje</option>
+                            <option value="ObraLabor">Obra o labor</option>
+                            <option value="Ocasional">Ocasional</option>
+                            <option value="PrestacionServicios">Prestación de servicios</option>
+                            <option value="Fijo">Término Fijo</option>
+                            <option value="Indefinido">Término indefinido</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="text-center col-12">
+                    <button class="btn btn-primary mr-1" (click)="onSubmit()" [disabled]="formGroup.invalid">Registrar
+                    </button>
+
+                    <button class="btn btn-secondary" type="reset">Cancelar</button>
+                </div>
+
+
+            </form>
+        </div>
+    </div>
+</div>

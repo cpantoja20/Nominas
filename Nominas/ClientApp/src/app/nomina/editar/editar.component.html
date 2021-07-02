@@ -1,0 +1,70 @@
+<div class="container">
+    <div class="row">
+        <div class="col-md-6 offset-md-3">
+            <h2>Editar Empleado</h2>
+            <br />
+            <!--  <form>
+                <div class="form-group">-->
+            <form class="row g-3" *ngIf="ver">
+                <div class="col-12">
+                    <label class="form-label">Buscar persona</label>
+                    <input type="number" name="identificacion" [(ngModel)]="buscar" class="form-control" />
+                </div>
+                <div class="col-12 text-center">
+                    <br />
+                    <button class="btn btn-secondary mr-1 " (click)="encontrar()">Buscar</button>
+                </div>
+            </form>
+            <form class="row g-3" *ngIf="ver2">
+                <div class="col-12">
+                    <label class="form-label">Identificacion</label>
+                    <input type="number" name="identificacion" [(ngModel)]="personas.identificacion" class="form-control"
+                        disabled />
+                </div>
+
+                <div class="col-12">
+                    <label class="form-label">Nombres</label>
+                    <input type="text" name="nombre" [(ngModel)]="personas.nombres" class="form-control" disabled />
+                </div>
+
+                <div class="col-12">
+                    <label class="form-label">Apellidos</label>
+                    <input type="text" name="apellidos" [(ngModel)]="personas.apellidos" class="form-control" disabled />
+                </div>
+            </form>
+            <form class="row g-3" *ngIf="ver2">
+                <div class="col-md-6">
+                    <label class="form-label">Fecha de Ingreso</label>
+                    <input type="date" name="fechaingreso" [(ngModel)]="personas.fechaIngreso" class="form-control" disabled/>
+                </div>
+            </form>
+            <form class="row g-3" *ngIf="ver2">
+                <div class="col-md-6">
+                    <label class="form-label">Estado</label>
+                    <input type="text" name="fechaingreso" [(ngModel)]="personas.estado" class="form-control" disabled/>
+                </div>
+            </form>
+            <form class="row g-3" *ngIf="ver2">
+                <div class="col-md-6">
+                    <label>Tipo de Contrato</label>
+                    <select class="form-select" aria-label="Default select example" name="tipocontrato"
+                         class="form-control" [(ngModel)]="personas.tipoContrato">
+                         <option value="{{personas.tipoContrato}}">{{personas.tipoContrato}}</option> 
+                         <option value="Aprendizaje">Aprendizaje</option>
+                         <option value="ObraLabor">Obra o labor</option>
+                         <option value="Ocasional">Ocasional</option>
+                         <option value="PrestacionServicios">Prestación de servicios</option>
+                         <option value="Fijo">Término Fijo</option>
+                         <option value="Indefinido">Término indefinido</option>
+                    </select>
+                </div>
+                <div class="col-12 text-center">
+                    <br />
+                    <button class="btn btn-secondary mr-1 " (click)="encontrar()" *ngIf="ver">Buscar</button>
+                    <button class="btn btn-primary mr-1" (click)="actualizar(personas)" *ngIf="ver2">Actualizar</button>
+                    <button class="btn btn-secondary" type="reset" *ngIf="ver2">Cancelar</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

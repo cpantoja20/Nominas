@@ -1,0 +1,12 @@
+D:\Documents\UPC\2021_1\Web\Proyecto_Aula\Version_2\Nominas\Datos\bin\Release\netstandard2.1\Datos.deps.json
+D:\Documents\UPC\2021_1\Web\Proyecto_Aula\Version_2\Nominas\Datos\bin\Release\netstandard2.1\Datos.dll
+D:\Documents\UPC\2021_1\Web\Proyecto_Aula\Version_2\Nominas\Datos\bin\Release\netstandard2.1\Datos.pdb
+D:\Documents\UPC\2021_1\Web\Proyecto_Aula\Version_2\Nominas\Datos\bin\Release\netstandard2.1\Entity.dll
+D:\Documents\UPC\2021_1\Web\Proyecto_Aula\Version_2\Nominas\Datos\bin\Release\netstandard2.1\Entity.pdb
+D:\Documents\UPC\2021_1\Web\Proyecto_Aula\Version_2\Nominas\Datos\obj\Release\netstandard2.1\Datos.csprojAssemblyReference.cache
+D:\Documents\UPC\2021_1\Web\Proyecto_Aula\Version_2\Nominas\Datos\obj\Release\netstandard2.1\Datos.AssemblyInfoInputs.cache
+D:\Documents\UPC\2021_1\Web\Proyecto_Aula\Version_2\Nominas\Datos\obj\Release\netstandard2.1\Datos.AssemblyInfo.cs
+D:\Documents\UPC\2021_1\Web\Proyecto_Aula\Version_2\Nominas\Datos\obj\Release\netstandard2.1\Datos.csproj.CoreCompileInputs.cache
+D:\Documents\UPC\2021_1\Web\Proyecto_Aula\Version_2\Nominas\Datos\obj\Release\netstandard2.1\Datos.csproj.CopyComplete
+D:\Documents\UPC\2021_1\Web\Proyecto_Aula\Version_2\Nominas\Datos\obj\Release\netstandard2.1\Datos.dll
+D:\Documents\UPC\2021_1\Web\Proyecto_Aula\Version_2\Nominas\Datos\obj\Release\netstandard2.1\Datos.pdb

@@ -1,0 +1,14 @@
+D:\Documents\UPC\2021_1\Web\Proyecto_Aula\Version_2\Nominas\Logica\bin\Release\netstandard2.1\Logica.deps.json
+D:\Documents\UPC\2021_1\Web\Proyecto_Aula\Version_2\Nominas\Logica\bin\Release\netstandard2.1\Logica.dll
+D:\Documents\UPC\2021_1\Web\Proyecto_Aula\Version_2\Nominas\Logica\bin\Release\netstandard2.1\Logica.pdb
+D:\Documents\UPC\2021_1\Web\Proyecto_Aula\Version_2\Nominas\Logica\bin\Release\netstandard2.1\Datos.dll
+D:\Documents\UPC\2021_1\Web\Proyecto_Aula\Version_2\Nominas\Logica\bin\Release\netstandard2.1\Entity.dll
+D:\Documents\UPC\2021_1\Web\Proyecto_Aula\Version_2\Nominas\Logica\bin\Release\netstandard2.1\Entity.pdb
+D:\Documents\UPC\2021_1\Web\Proyecto_Aula\Version_2\Nominas\Logica\bin\Release\netstandard2.1\Datos.pdb
+D:\Documents\UPC\2021_1\Web\Proyecto_Aula\Version_2\Nominas\Logica\obj\Release\netstandard2.1\Logica.csprojAssemblyReference.cache
+D:\Documents\UPC\2021_1\Web\Proyecto_Aula\Version_2\Nominas\Logica\obj\Release\netstandard2.1\Logica.AssemblyInfoInputs.cache
+D:\Documents\UPC\2021_1\Web\Proyecto_Aula\Version_2\Nominas\Logica\obj\Release\netstandard2.1\Logica.AssemblyInfo.cs
+D:\Documents\UPC\2021_1\Web\Proyecto_Aula\Version_2\Nominas\Logica\obj\Release\netstandard2.1\Logica.csproj.CoreCompileInputs.cache
+D:\Documents\UPC\2021_1\Web\Proyecto_Aula\Version_2\Nominas\Logica\obj\Release\netstandard2.1\Logica.csproj.CopyComplete
+D:\Documents\UPC\2021_1\Web\Proyecto_Aula\Version_2\Nominas\Logica\obj\Release\netstandard2.1\Logica.dll
+D:\Documents\UPC\2021_1\Web\Proyecto_Aula\Version_2\Nominas\Logica\obj\Release\netstandard2.1\Logica.pdb

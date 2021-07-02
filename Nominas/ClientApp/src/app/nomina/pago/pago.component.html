@@ -1,0 +1,71 @@
+<div class="container">
+    <div class="row">
+        <div class="col-md-6 offset-md-3">
+            <h2>PAGO EMPLEADO</h2>
+            <br />
+            <!--  <form>
+                <div class="form-group">-->
+            <form class="row g-3" *ngIf="ver">
+                <div class="col-12">
+                    <label class="form-label">CEDULA</label>
+                    <input type="number" name="identificacion" [(ngModel)]="buscar" class="form-control" />
+                </div>
+            </form>
+            <form class="row g-3" *ngIf="ver2">
+                <div class="col-12">
+                    <label class="form-label">Identificacion</label>
+                    <input type="number" name="identificacion" [(ngModel)]="persona.identificacion" 
+                        class="form-control" disabled/>
+                </div>
+
+                <div class="col-12">
+                    <label class="form-label">Nombres</label>
+                    <input type="text" name="nombre" [(ngModel)]="persona.nombres" class="form-control" disabled />
+                </div>
+
+                <div class="col-12">
+                    <label class="form-label">Apellidos</label>
+                    <input type="text" name="apellidos" [(ngModel)]="persona.apellidos" class="form-control" disabled />
+                </div>
+            </form>
+            <form class="row g-3" *ngIf="ver2">
+                <div class="col-md-6">
+                    <label class="form-label">Fecha de Ingreso</label>
+                    <input type="text" name="fechaingreso" [(ngModel)]="persona.fechaIngreso" class="form-control" disabled />
+                </div>
+            </form>
+            <form class="row g-3" *ngIf="ver2">
+                <div class="col-md-6">
+                    <label class="form-label">Estado</label>
+                    <input type="text" name="fechaingreso" [(ngModel)]="persona.estado" class="form-control" disabled />
+                </div>
+            </form>
+            <form class="row g-3" *ngIf="ver2">
+                <div class="col-md-6">
+                    <label class="form-label">Tipo Contrato</label>
+                    <input type="text" name="fechaingreso" [(ngModel)]="persona.tipoContrato" class="form-control" disabled />
+                </div>
+            </form>
+            <div class="row g-3" *ngIf="ver2">
+                <div class="col-md-6">
+                    <label class="form-label">FECHA INICIAL</label>
+                    <input type="date" name="FechaInicio"  [(ngModel)]="pago.fechaInicio" class="form-control">
+                </div>
+            </div>
+            <div class="row g-3" *ngIf="ver2">
+                <div class="col-md-6">
+                    <label class="form-label">FECHA FINAL</label>
+                    <input type="date" name="FechaFinal"  [(ngModel)]="pago.fechaFinal" class="form-control">
+                </div>
+            </div>
+            <div class="row g-3">
+                <div class="col-12 text-center">
+                    <br /> 
+                    <button class="btn btn-secondary mr-1 " (click)="encontrar()" *ngIf="ver">Buscar</button>
+                    <button class="btn btn-primary mr-1" (click)="RealizarPago(persona.identificacion)" *ngIf="ver2">Ralizar pago</button>
+                    <button class="btn btn-secondary" type="reset" (click)="reset()" *ngIf="ver2">Cancelar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
